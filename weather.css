@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #f5e1c8;
+    color: #3c2317;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9e6d0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #3c2317;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.weather-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-weather {
+    font-size: 24px;
+}
+
+.main-weather h2 {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.city-details {
+    text-align: right;
+}
+
+.city-details h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.forecast-day {
+    padding: 15px;
+    background-color: #fbe3c9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.forecast-day h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.forecast-day.small-box {
+    grid-column: span 1;
+}
+
+.forecast-day.large-box {
+    grid-column: span 2;
+}
+
+.error-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcccc;
+    border-left: 5px solid #ff4d4d;
+    color: #a70000;
+}
+
+  button {
+    padding: 10px 15px;
+    background-color: #f49d37; /* Warm orange button */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(244, 157, 55, 0.7); /* Warm orange button with transparency */    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #e58929; /* Darker on hover */
+  }
+  
+ 
